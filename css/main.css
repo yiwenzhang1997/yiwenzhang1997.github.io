@@ -2,6 +2,10 @@ body{
     color:#273746;
     background-color: whitesmoke;
 }
+.sub-title{
+    font-family: Bradley Hand, cursive;
+    text-align: center;
+}
 .navbar{
     font-family: Bradley Hand, cursive;
     background-color: whitesmoke;

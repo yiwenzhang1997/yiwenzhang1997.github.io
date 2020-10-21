@@ -3,15 +3,21 @@ layout: default
 ---
 <div class="post-div">
     <h1 class="sub-title">{{ page.title }}</h1>
-    <p class="main-text">{{ page.date | date_to_string }}</p>
+    <p class="main-text" style="text-align: center;">{{ page.date | date_to_string }}</p>
 
     <div class="post">
     {{ content }}
     </div>
+
+    <a href="/blog">Back to list</a>
 </div>
 
 <style>
     .post-div{
         padding: 20px;
+    }
+    a{
+        text-align: center;
+        font-family: Bradley Hand, cursive;
     }
 </style>

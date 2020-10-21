@@ -1,4 +1,7 @@
-
+body{
+    color:#273746;
+    background-color: whitesmoke;
+}
 .navbar{
     font-family: Bradley Hand, cursive;
     background-color: whitesmoke;
@@ -23,6 +26,9 @@
     margin: 20px 0 0 0;
     font-family: Bradley Hand, cursive;
 }
+.main-text{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
 .jumbotron-crop{
     width: 200px;
     height: 200px;
@@ -32,4 +38,3 @@
     width: 200px;
     margin: -20px 0 0 0;
 }
-

@@ -1,11 +1,35 @@
 ---
 layout: default
-title: Yiwen's Blog
 ---
-	<h1>{{ page.title }}</h1>
-	<ul class="posts">
-
+	<div class="posts main-text">
 	  {% for post in site.posts %}
-	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+	    <div class="card">
+            <a href="{{ post.url }}" title="{{ post.title }}">
+                <h3>{{ post.title }}</h3>
+                <small>{{ post.date | date_to_string }}</small>
+                <p>{{post.abstract}}</p>
+            </a>
+        </div>
 	  {% endfor %}
-	</ul>
+    </div>
+
+    <style>
+        p{
+          text-align: left;
+        }
+        .card{
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+          transition: 0.3s;
+          margin: 10px 5px;
+          padding: 5px;
+          border-radius: 10px;
+        }
+        .card:hover {
+          box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+        a {
+            color: #273746;
+            text-decoration: none;
+        }
+
+    </style>

@@ -2,7 +2,7 @@
 layout: default
 title: Yiwen Zhang
 ---
-<div class="about">
+<div class="block-div">
     <h3 class="sub-title">About Me</h3>
     <p class="main-text">Hi there, I'm Yiwen! <br> I'm a 2nd year phd student in cognitive psychology, 
         working with Dr. Ben Rottman at Univeristy of Pittsburgh. 
@@ -11,9 +11,29 @@ title: Yiwen Zhang
         I'm also passionate in Data Science and Statistics.</p>
     <p class="main-text">Outside the lab, I enjoy leisure reading, cooking and painting!</p>
 </div>
+<div class="block-div" id="research">
+    <h3 class="sub-title">Research</h3>
+    <p class="main-text"><b>Causal learning with delays in 16 days</b>
+        <br>
+        One of research project I'm currently doing is to investigate how delays between cause and effect will affect causal learning. 
+        An important question in the field of causal learning is whether people can learn causal relations when there are delays between
+         causes and effects (e.g., Buehner & McGregor, 2006). However, previous studies have only investigated delays on the order of
+          seconds. In this study we attempted to test whether people can learn a cause-effect relation with hour long delays,
+           similar to how someone might test how quickly a medicine works by taking the medicine on certain days. The delays between
+            the cause and effect were either  0, 3, 9, or 21 hours, and the study lasted 16 days.
+    </p>
+    <p class="main-text"><b>Remote Psychology Task Experiment</b>
+        <br>
+        Most of my experiments are conducted outside lab. We developed web-based or mobile phone-based platform, allowing  people to
+        participate in the research remotely. Also, our lab built <a href="https://www.psychcloud.org/">psychCloud template</a> to share
+         with psychology community how we conduct
+         remote experiment. Currently I'm working on updating this template to most up-to-date stack using Flask, Vuejs and Firestore.
+    </p>
+</div>
 
 <style>
-.about{
-    margin: 20px,10px;
+.block-div{
+    margin: 20px;
+    padding: 10px 0;
 }
 </style>

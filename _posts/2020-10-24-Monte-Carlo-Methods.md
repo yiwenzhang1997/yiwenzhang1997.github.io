@@ -16,11 +16,11 @@ When I'm taking courses on Coursera, I usually benefit a lot from other students
     - Value estimates and policies only changed when an episodic was completed. Thus MC updated episodic by episodic but not step by step
     - a Monte Carlo method for learning a value function would first observe multiple returns from the same state. Then, it average those observed returns to estimate the expected return from that state. As the number of samples increases, the average tends to get closer and closer to the expected return.
 
-    ![C2W1%20Monte%20Carlo%20Methods%204d1b8a57c19e4b708f425ca558f45026/Untitled.png](/C2W1%20Monte%20Carlo%20Methods%204d1b8a57c19e4b708f425ca558f45026/Untitled.png)
+    ![static/post_img/2020-10-24-Monte-Carlo-Methods/Untitled.png](/static/post_img/2020-10-24-Monte-Carlo-Methods/Untitled.png)
 
     Each return is included in the equation for the previous time steps return. That means we can avoid duplicating computations by starting at G_5 and working our way backwards.
 
-    ![C2W1%20Monte%20Carlo%20Methods%204d1b8a57c19e4b708f425ca558f45026/Untitled%201.png](/C2W1%20Monte%20Carlo%20Methods%204d1b8a57c19e4b708f425ca558f45026/Untitled%201.png)
+    ![static/post_img/2020-10-24-Monte-Carlo-Methods/Untitled%201.png](/static/post_img/2020-10-24-Monte-Carlo-Methods/Untitled%201.png)
 
 - Use Monte-Carlo prediction to estimate the value function for a given policy.
     - in order to get q*, first we need to do policy evaluation q(s,a) under pi
@@ -48,7 +48,7 @@ When I'm taking courses on Coursera, I usually benefit a lot from other students
     - For the policy improvement step, we can make the policy greedy with respect to the agent's current action value estimates.
     - Monte Carlo control methods combined policy improvement and policy evaluation on an episode-by-episode basis.
 
-    ![C2W1%20Monte%20Carlo%20Methods%204d1b8a57c19e4b708f425ca558f45026/Untitled%202.png](/C2W1%20Monte%20Carlo%20Methods%204d1b8a57c19e4b708f425ca558f45026/Untitled%202.png)
+    ![static/post_img/2020-10-24-Monte-Carlo-Methods/Untitled%202.png](/static/post_img/2020-10-24-Monte-Carlo-Methods/Untitled%202.png)
 
 **Lesson 3: Exploration Methods for Monte-Carlo**
 
@@ -58,7 +58,7 @@ When I'm taking courses on Coursera, I usually benefit a lot from other students
     - Epsilon greedy expiration: They usually take the greedy action, but occasionally take a random action.
     - epsilonϵ-greedy exploration the agent will find an \epsilonϵ-soft policy, which is stochastic and might not be the optimal deterministic policy
 
-    ![C2W1%20Monte%20Carlo%20Methods%204d1b8a57c19e4b708f425ca558f45026/Untitled%203.png](/C2W1%20Monte%20Carlo%20Methods%204d1b8a57c19e4b708f425ca558f45026/Untitled%203.png)
+    ![static/post_img/2020-10-24-Monte-Carlo-Methods/Untitled%203.png](/static/post_img/2020-10-24-Monte-Carlo-Methods/Untitled%203.png)
 
 **Lesson 4: Off-policy learning for prediction**
 
@@ -75,27 +75,27 @@ When I'm taking courses on Coursera, I usually benefit a lot from other students
 - Understand importance sampling
     - importance sampling allows us to do off-policy learning - learning with one policy while following another.
 
-    ![C2W1%20Monte%20Carlo%20Methods%204d1b8a57c19e4b708f425ca558f45026/Untitled%204.png](/C2W1%20Monte%20Carlo%20Methods%204d1b8a57c19e4b708f425ca558f45026/Untitled%204.png)
+    ![static/post_img/2020-10-24-Monte-Carlo-Methods/Untitled%204.png](/static/post_img/2020-10-24-Monte-Carlo-Methods/Untitled%204.png)
 
-    ![C2W1%20Monte%20Carlo%20Methods%204d1b8a57c19e4b708f425ca558f45026/Untitled%205.png](/C2W1%20Monte%20Carlo%20Methods%204d1b8a57c19e4b708f425ca558f45026/Untitled%205.png)
+    ![static/post_img/2020-10-24-Monte-Carlo-Methods/Untitled%205.png](/static/post_img/2020-10-24-Monte-Carlo-Methods/Untitled%205.png)
 
-    ![C2W1%20Monte%20Carlo%20Methods%204d1b8a57c19e4b708f425ca558f45026/Untitled%206.png](/C2W1%20Monte%20Carlo%20Methods%204d1b8a57c19e4b708f425ca558f45026/Untitled%206.png)
+    ![static/post_img/2020-10-24-Monte-Carlo-Methods/Untitled%206.png](/static/post_img/2020-10-24-Monte-Carlo-Methods/Untitled%206.png)
 
-    ![C2W1%20Monte%20Carlo%20Methods%204d1b8a57c19e4b708f425ca558f45026/Untitled%207.png](/C2W1%20Monte%20Carlo%20Methods%204d1b8a57c19e4b708f425ca558f45026/Untitled%207.png)
+    ![static/post_img/2020-10-24-Monte-Carlo-Methods/Untitled%207.png](/static/post_img/2020-10-24-Monte-Carlo-Methods/Untitled%207.png)
 
 - Use importance sampling to estimate the expected value of a target distribution using samples from a different distribution
 - Understand how to use importance sampling to correct returns
 
-    ![C2W1%20Monte%20Carlo%20Methods%204d1b8a57c19e4b708f425ca558f45026/Untitled%208.png](/C2W1%20Monte%20Carlo%20Methods%204d1b8a57c19e4b708f425ca558f45026/Untitled%208.png)
+    ![static/post_img/2020-10-24-Monte-Carlo-Methods/Untitled%208.png](/static/post_img/2020-10-24-Monte-Carlo-Methods/Untitled%208.png)
 
-    ![C2W1%20Monte%20Carlo%20Methods%204d1b8a57c19e4b708f425ca558f45026/Untitled%209.png](/C2W1%20Monte%20Carlo%20Methods%204d1b8a57c19e4b708f425ca558f45026/Untitled%209.png)
+    ![static/post_img/2020-10-24-Monte-Carlo-Methods/Untitled%209.png](/static/post_img/2020-10-24-Monte-Carlo-Methods/Untitled%209.png)
 
-    ![C2W1%20Monte%20Carlo%20Methods%204d1b8a57c19e4b708f425ca558f45026/Untitled%2010.png](/C2W1%20Monte%20Carlo%20Methods%204d1b8a57c19e4b708f425ca558f45026/Untitled%2010.png)
+    ![static/post_img/2020-10-24-Monte-Carlo-Methods/Untitled%2010.png](/static/post_img/2020-10-24-Monte-Carlo-Methods/Untitled%2010.png)
 
-    ![C2W1%20Monte%20Carlo%20Methods%204d1b8a57c19e4b708f425ca558f45026/Untitled%2011.png](/C2W1%20Monte%20Carlo%20Methods%204d1b8a57c19e4b708f425ca558f45026/Untitled%2011.png)
+    ![static/post_img/2020-10-24-Monte-Carlo-Methods/Untitled%2011.png](/static/post_img/2020-10-24-Monte-Carlo-Methods/Untitled%2011.png)
 
 - Understand how to modify the Monte-Carlo prediction algorithm for off-policy learning.
 
-![C2W1%20Monte%20Carlo%20Methods%204d1b8a57c19e4b708f425ca558f45026/Untitled%2012.png](/C2W1%20Monte%20Carlo%20Methods%204d1b8a57c19e4b708f425ca558f45026/Untitled%2012.png)
+![static/post_img/2020-10-24-Monte-Carlo-Methods/Untitled%2012.png](/static/post_img/2020-10-24-Monte-Carlo-Methods/Untitled%2012.png)
 
-![C2W1%20Monte%20Carlo%20Methods%204d1b8a57c19e4b708f425ca558f45026/Untitled%2013.png](/C2W1%20Monte%20Carlo%20Methods%204d1b8a57c19e4b708f425ca558f45026/Untitled%2013.png)
+![static/post_img/2020-10-24-Monte-Carlo-Methods/Untitled%2013.png](/static/post_img/2020-10-24-Monte-Carlo-Methods/Untitled%2013.png)

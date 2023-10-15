@@ -3,12 +3,15 @@ body{
     background-color: whitesmoke;
 }
 .sub-title{
+    margin: 20px 0 0 0;
     font-family: Bradley Hand, cursive;
     text-align: center;
 }
 .navbar{
+    height: 40px;
     font-family: Bradley Hand, cursive;
     background-color: whitesmoke;
+    font-size: 18px;
 }
 .navbar-nav {
     position: absolute;
@@ -17,6 +20,7 @@ body{
     
 }
 .nav-item {
+    margin-top: 20px;
     margin-right: 40px;
     font-size: larger;
 
@@ -26,12 +30,18 @@ body{
     background: #f4e2d8;
 }
 
+.jumbotron_subpage {
+    min-height: 200px;
+    background: #f4e2d8;
+}
+
 .jumbotron-text{
     margin: 20px 0 0 0;
-    font-family: Bradley Hand, cursive;
+    font-family: Bradley Hand;
 }
 .main-text{
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: "Gill Sans", sans-serif;
+    font-size: 18px;
 }
 .jumbotron-crop{
     width: 200px;
@@ -45,4 +55,14 @@ body{
 a {
     color: #273746;
     text-decoration: none;
+}
+
+.portfolio_card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background: whitesmoke;
+    margin-top: 20pt;
+}
+.portfolio_card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }

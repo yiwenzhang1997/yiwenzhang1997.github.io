@@ -1,97 +1,121 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-   <!-- Required meta tags -->
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-   <meta name="google-site-verification" content="opTTZ6ut4SiSI0BFiQVdU151_EIKX6wV8cNkebwjeHc" />
-   <!-- Bootstrap CSS -->
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-   <link rel="stylesheet" type="text/css" href="/css/main.css">
-   <title>Yiwen Zhang</title>
-</head>
-<body>
-    <main>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="/">Yiwen Zhang</a>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="/#research">Research</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="portfolio.html">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/static/Resume_UX_YiwenZhang_20231001.pdf">Resume</a></p>
-                </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link" href="/blog">Blog</a>
-                </li> -->
-                </ul>
-            </div>
-        </nav>
+---
+layout: default
+title: Portfolio
+permalink: /portfolio/
+---
 
-        <div class="jumbotron_subpage jumbotron-fluid">
-            <div class="jumbotron-container" align="center">
-                <div class="main-text">
-                    <h3 align="center" class="sub-title">Portfolio</h3>
-                    <h5 style="margin-top: 20pt;">Human Behavioral Scientist | User Researcher</h5>
-                        <a href="mailto: yiwenzhang@pitt.edu">Email</a> |
-                        <a href="https://github.com/yiwenzhang1997">Github</a> |
-                        <a href="https://www.linkedin.com/in/yiwen-zhang-868368190/">Linkedin</a>
-                    
-                </div> 
+<div class="block-div main-text">
+    <h3 class="sub-title">-</h3>
+    <h3 class="sub-title">Portfolio</h3>
+    <h3 class="sub-title">-</h3>
+
+    <p>Hi there! I'm Yiwen. Welcome to my UX portfolio page where I demostrated my work on quantitative and qualitative UX research projects.</p>
+    <!-- {% for post in site.posts %}
+        {% if post.category == "portfolio" %}
+            <div class="row portfolio_card mb-4">
+                <div class="col-md-4 d-flex align-items-center">
+                    <img src="{{ post.image }}" alt="{{ post.title }}" class="img-fluid">
+                </div>
+                <div class="col-md-8 p-5">
+                    <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+                    <p><b>My Role:</b> {{ post.role }} <br>
+                       <b>Timeline:</b> {{ post.timeline }}</p>
+                    <p>{{ post.excerpt }}</p>
+                    <a href="{{ post.url }}">View Details</a>
+                </div>
+            </div>
+        {% endif %}
+    {% endfor %} -->
+    <div class="row portfolio_card">
+                    <div class="col-md-4 d-flex align-items-center">
+                        <img src="/static/images/whatsapp.jpg" alt="Project 1" class="img-fluid">
+                        <!-- Add your image or content here -->
+                    </div>
+                    <div class="col-md-8 p-5">
+                        <div >
+                            <h4>WhatsApp Feature Awareness Research</h4>
+                            <p><b>My Role</b>: UX Researcher <br>
+                                <b>Timeline</b>: 12 weeks <br></p>
+                                <p>This project aimed to answer questions such as "which features have low awareness compared
+                                    to other features within a team or across teams, and how should we prioritize them for improvement?"
+                                    I used survey methodology to collect data over 6000 users across 5 countries on 60 WhatsApp features and quantitative
+                                    analysis to provide research insights for feature prioritization based on users' awareness.
+                                    The methods involve feature comparisons across teams, user groups, yearly data and competitor apps.</p>
+                                <p><b>Solutions</b>: Survey Design | Large-scale Data Analysis| User Segments Analysis | Competitor Comparison</p>
+                                <a href="https://docs.google.com/presentation/d/e/2PACX-1vRi1zrWE1SGwxyor1qlNCZWPEwLGs5x_4PmqYXqoZ_om177GHr-YeN2CoXabhpFWaQZl8yl3OXm8B-i/pub?start=false&loop=false&delayms=3000&slide=id.g294a5121507_0_652">View Details</a>     
+                        </div>
+                    </div>
+                </div>
+                <div class="row portfolio_card">
+                    <div class="col-md-4 d-flex align-items-center">
+                        <img src="/static/images/HMI.jpg" alt="Project 1" class="img-fluid">
+                        <!-- Add your image or content here -->
+                    </div>
+                    <div class="col-md-8 p-5">
+                        <div >
+                            <h4>Drivers’ Experience with Advanced Driver-Assistant System</h4>
+                            <p><b>My Role</b>: UX Researcher <br>
+                                <b>Timeline</b>: 3 month <br></p>
+                                <p>The main goal of the larger project is designing intuitive interface panels for Advanced Driver
+                                    Assistance Systems (ADAS) for SAIC Motor (stakeholder) and providing insights towards ADAS
+                                    industry regulation in China. I led an qualitative project to explore drivers’ experience with ADAS
+                                    on the competitor models such as Tesla Model S, Volvo XC60, or Geely Borui.
+                                </p>
+                                <p><b>Solutions</b>: In-depth Interview | Contextual Inquiry | Competitor Analysis | Survey</p>
+                                <a href="https://docs.google.com/presentation/d/e/2PACX-1vRi1zrWE1SGwxyor1qlNCZWPEwLGs5x_4PmqYXqoZ_om177GHr-YeN2CoXabhpFWaQZl8yl3OXm8B-i/pub?start=false&loop=false&delayms=3000&slide=id.g295b312126d_0_424">View Details</a>     
+                        </div>
+                    </div>
+                </div>
+        <!-- Project 2 -->
+        <div class="row mb-4 portfolio_card">
+            <div class="col-md-4 d-flex align-items-center">
+                <img src="/static/images/itsa.jpg" alt="Project 2" class="img-fluid">
+            </div>
+            <div class="col-md-8  p-5">
+                <h4>Health Decision Making on Smartphones</h4>
+                <p><b>My Role</b>: Principle Investigator<br>
+                    <b>Timeline</b>: 1 year</p>
+                    <p>As technology (e.g. health-tracking app or apple watch) enables individuals to
+                        monitor their health data (e.g. weights, mood) through apps and wearables, the crucial question
+                        arises: How effectively can people interpret these observations for informed lifestyle decisions?
+                        This project systematically investigates human reasoning with various interrupted
+                        time series scenarios and different presentation formats (e.g. graphs vs instances; PC vs smartphone).
+                        Offered actionable design recommendations to augment data interpretation and
+                        inference-making capabilities in everyday life</p>
+                    <p><b>Solutions</b>: A/B testing | Large-scale Data Analysis | Cluster Analysis | Diary Study<br></p></p>
+                    <a href="https://docs.google.com/presentation/d/e/2PACX-1vRi1zrWE1SGwxyor1qlNCZWPEwLGs5x_4PmqYXqoZ_om177GHr-YeN2CoXabhpFWaQZl8yl3OXm8B-i/pub?start=false&loop=false&delayms=3000&slide=id.g286307ccae1_0_445">View Details</a>
             </div>
         </div>
-        <section id="projects">
-            <h2>Projects</h2>
-
-            <!-- Example project entry -->
-            <div class="project">
-                <img src="project1.jpg" alt="Project 1">
-                <h3>Project 1</h3>
-                <p>Description of Project 1.</p>
-                <a href="project1_details.html">View Details</a>
+        <div class="row mb-4 portfolio_card">
+            <div class="col-md-4 d-flex align-items-center">
+                <img src="/static/images/smartphone.jpg" alt="Project 3" class="img-fluid">
             </div>
-
-            <!-- Add more project entries as needed -->
-        </section>
-
-        <section id="skills">
-            <h2>Skills</h2>
-
-            <!-- Example skills list -->
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <!-- Add more skills as needed -->
-            </ul>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Me</h2>
-
-            <!-- Add your contact information and/or contact form here -->
-        </section>
-    </main>
-
-    <footer>
-        <!-- Add footer content here (e.g., copyright information) -->
-    </footer>
-
-</body>
-</html>
-
-<style>
-    .block-div{
-        margin: auto;
-        padding: 10px;
-        width: 80%;
-    }
-    a{
-        text-decoration: underline;
-        color:#625750;
-    }
-</style>
+            <div class="col-md-8 p-5">
+                <h4>Remote Psychology Experiment Platform</h4>
+                <p><b>My Role</b>: Researcher, Designer and Full-stack Developer<br>
+                    <b>Timeline</b>: 3 month </p>
+                <p>Most of my experiments are conducted outside the lab scenerio. I developed a research platform on Google Cloud, enabling remote data collection
+                    from 2000+ participants across 5+ experiments and significantly expanding research reach during COVID-19.<br>
+                    To enhance user experience and increase participant retention rates, I conducted multiple A/B tests and usability tests,
+                    effectively managing large-scale data collection with less than 1% attrition.<br>
+                    I also built a <a href="https://newpsychcloud.appspot.com/">psychCloud template</a> based on
+                    Flask, Vuejs and Firestore to share with the psychology community.</p>
+                    <p><b>Solutions</b>: A/B testing | Usability Test | Prototype Feedback<br></p></p>
+                <a href="https://newpsychcloud.appspot.com/">View Template/Tutorial</a>
+            </div>
+        </div>
+        <div class="row mb-4 portfolio_card">
+            <div class="col-md-4 d-flex align-items-center">
+                <img src="/static/images/rshiny.jpg" alt="Project 4" class="img-fluid">
+            </div>
+            <div class="col-md-8 p-5">
+                <h4>Youtube Trending Data Dashboard</h4>
+                <p><b>My Role</b>: Data Analyst and Data Engineer<br>
+                    <b>Timeline</b>: 1 week</p>
+                <p>I created an interactive Shiny app to explore the Youtube Trending Data since August 2020, with 65391 records.
+                    This data dashboard enables intuitive visualization using R shiny and ggplot2. The dashboard showcases dynamic
+                    features like filters, scatterplots, bar plots, and histograms, offering a comprehensive view of the dataset's trends.</p>
+                <p>View the interactive <a href="https://yiwenzhang.shinyapps.io/youtube_trending_data_app">dashboard</a>!</p>
+            </div>
+        </div>
+</div>
